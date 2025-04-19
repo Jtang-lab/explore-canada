@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canada Adventures - Explore the North</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="CanadaRiver.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="hero-content">
+            <h1 class="animate__animated animate__fadeInDown">Discover Canada's Wild Beauty</h1>
+            <p class="animate__animated animate__fadeInUp">Your Journey into the Heart of the North Begins Here.</p>
+            <div class="hero-buttons">
+                <a href="#destinations" class="btn animate__animated animate__pulse animate__infinite">Explore Destinations</a>
+                <a href="#experiences" class="btn animate__animated animate__pulse animate__infinite">Find Adventures</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="destinations" class="destinations">
+        <h2 class="section-title">Explore Our Top Destinations</h2>
+        <div class="destination-grid">
+            <div class="destination-card" data-description="Banff: Majestic mountains and turquoise lakes.">
+                <img src="banff.webp" alt="Banff">
+                <h3>Ontario</h3>
+                <a href="banff.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="destination-card" data-description="Vancouver: A vibrant city nestled between mountains and ocean.">
+                <img src="vancouver.webp" alt="Vancouver">
+                <h3>Quebec</h3>
+                <a href="vancouver.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="destination-card" data-description="Quebec City: Historic charm and French culture.">
+                <img src="quebec.webp" alt="Quebec City">
+                <h3>Maratimes</h3>
+                <a href="quebec.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="destination-card" data-description="Yukon: Untamed wilderness and northern lights.">
+                <img src="yukon.webp" alt="Yukon">
+                <h3>Newfoundland</h3>
+                <a href="yukon.html" class="learn-more">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiences" class="experiences">
+        <h2 class="section-title">Unforgettable Experiences</h2>
+        <div class="experience-carousel">
+            <div class="experience-item">
+                <img src="hiking_canada.webp" alt="Hiking">
+                <h3>Mountain Hiking</h3>
+                <p>Explore breathtaking trails.</p>
+            </div>
+            <div class="experience-item">
+                <img src="kayaking.webp" alt="Kayaking">
+                <h3>Sea Kayaking</h3>
+                <p>Paddle along stunning coastlines.</p>
+            </div>
+            <div class="experience-item">
+                <img src="northern_lights.webp" alt="Northern Lights">
+                <h3>Northern Lights Tours</h3>
+                <p>Witness the aurora borealis.</p>
+            </div>
+            <div class="experience-item">
+                <img src="skiing.webp" alt="Skiing">
+                <h3>Skiing/Snowboarding</h3>
+                <p>Hit the slopes in world-class resorts.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="plan" class="plan">
+        <h2 class="section-title">Plan Your Canadian Adventure</h2>
+        <div id="map"></div>
+        <div class="plan-tools">
+            <a href="#" class="btn">Book Accommodations</a>
+            <a href="#" class="btn">Find Tours</a>
+            <a href="#" class="btn">Create Your Itinerary</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="section-title">About Canada Adventures</h2>
+        <p>We are a team of passionate travelers dedicated to showcasing the best of Canada. Let us guide you on an unforgettable journey.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-container">
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <h3>Our Location</h3>
+                <p>123 Adventure Street,<br>Canadian Wilderness, CA</p>
+                <p>Phone: +1 555-123-4567</p>
+                <p>Email: info@canadaadventures.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Canada Adventures</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
